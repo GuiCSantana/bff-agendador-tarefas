@@ -4,7 +4,7 @@ name: PR Workflow
 on:
   pull_request:
     branches:
-      - main
+      - master
     types:
       - opened
       - synchronize
@@ -34,6 +34,3 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
-
-      # - name: Run tests
-      #   run: mvn test
